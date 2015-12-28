@@ -193,4 +193,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/mako/proprietary/system/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/lge/mako/proprietary/system/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/lge/mako/proprietary/system/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
-    vendor/lge/mako/proprietary/system/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so
+    vendor/lge/mako/proprietary/system/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
+    vendor/lge/mako/proprietary/system/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
+    vendor/lge/mako/proprietary/system/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
