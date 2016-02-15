@@ -36,13 +36,13 @@ echo "  VENDOR_MAKEFILE=$VENDOR_MAKEFILE"
 
 # All hail the common header
 
-HEADER="# Copyright (C) $(date +"%Y") ParanoidAndroid Project
+HEADER="# Copyright $(date +"%Y") ParanoidAndroid Project
 #
 # Licensed under the Apache License, Version 2.0 (the \"License\");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#      http://www.apache.org/licenses/LICENSE-2.0
+#     http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an \"AS IS\" BASIS,
@@ -149,7 +149,7 @@ for FILE in $(cat $BLOBS_TXT | grep -v -E '^ *(#|$)' | sed 's/^[-\/]*//' | sort 
     if [ "$SOURCE" = "adb" ]; then
         adb pull -p -a $FILE $BLOBS_ROOT/$FILE
     else
-        cp $SOURCE/$FILE $BLOBS_ROOT/$FILE
+        cp --no-dereference --preserve=links $SOURCE/$FILE $BLOBS_ROOT/$FILE
     fi
 done
 
