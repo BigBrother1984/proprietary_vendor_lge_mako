@@ -17,7 +17,6 @@
 # An overlay for features that depend on proprietary files
 DEVICE_PACKAGE_OVERLAYS := vendor/lge/mako/overlay
 
-# Builder instructions about what proprietary files to include
 PRODUCT_COPY_FILES += \
     vendor/lge/mako/proprietary/system/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
     vendor/lge/mako/proprietary/system/bin/bridgemgrd:system/bin/bridgemgrd \
